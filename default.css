@@ -1,0 +1,89 @@
+body
+{ margin: 0px;
+  padding: 10px;
+  word-wrap: break-word;
+  position: relative;
+  width: 300px;
+}
+
+.notification
+{ -webkit-animation-duration: .6s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-name: pop;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+  -webkit-font-smoothing: antialiased;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(56,81,126,0.80)), to(rgba(9,26,56,0.80)) );
+  border: 1px solid rgba(15,15,15,0.6);
+  border-bottom: 1px solid rgba(0,0,0,1);
+  color: rgba(255,255,255,0.9);
+  font: 12px/1.4 "Helvetica","Helvetica Neue", Arial, sans;
+  min-width: 300px;
+  text-shadow: 0px -1px 0px black;
+}
+
+.notification>div
+{ -webkit-border-radius: 4px;
+  border-top: 1px solid rgba(106,136,188,1);
+  border-bottom: 1px solid rgba(106,136,188,0.2);
+}
+
+.notification>div>div
+{ -webkit-border-radius: 4px;
+  border-left: 1px solid rgba(106,136,188,0.1);
+  border-left: 1px solid rgba(106,136,188,0.1);
+  overflow: hidden;
+  padding: 6px 10px;
+}
+
+.title
+{ -webkit-transition: all 0.2s linear;
+  color: rgba(255,255,255,1);
+  font-size: 14px;
+  margin: 0 0 2px 0;
+  padding: 0 0 0 25px;
+}
+
+.icon
+{ -webkit-border-radius: 4px;
+  background: none !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 10px 0 0;
+  overflow: hidden;
+  text-align: center;
+  width: 32px;
+}
+
+.icon img
+{ float: left;
+  margin: 0;
+  max-height: 32px;
+  max-width: 32px;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.message
+{ margin: 0;
+  padding: 0 0 0 42px;
+}
+
+@-webkit-keyframes pop {
+    from {
+        -webkit-transform: scale(.1);
+        opacity: 0;
+    }
+    85% {
+        -webkit-transform: scale(1.05);
+        opacity: 1;
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
