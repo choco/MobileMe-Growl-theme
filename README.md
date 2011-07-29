@@ -15,4 +15,4 @@ or you can mail me at just@adream.me
 
 Copyright 2011 oriontwentyone@me.com
 
-I only added 4 lines to it! I don't reserve copyright on this :D
+I only added 4 lines to it! I don't deserve copyright on this :D
